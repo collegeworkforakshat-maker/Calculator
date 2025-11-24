@@ -1,81 +1,117 @@
-[![Python][python-shield]][python-url]
-[![License: MIT][license-shield]][license-url]
-[![Issues][issues-shield]][issues-url]
+# Calculator Application
 
-<br />
+## Overview of the Project
+A simple yet elegant desktop calculator application built with Python and Tkinter. This lightweight calculator provides a clean graphical user interface for performing basic arithmetic operations. Designed with simplicity in mind, it offers all essential calculation features without unnecessary complexity, making it perfect for quick mathematical computations in daily use.
 
-<p align="center">
-  <h1 align="center">🧮 Python Calculator</h1>
+## Features
+✨ **Core Functionality**
+- Basic arithmetic operations (Addition, Subtraction, Multiplication, Division)
+- Decimal number support for precise calculations
+- Real-time expression display
+- Instant calculation results
 
-  <p align="center">
-    A simple, efficient, and robust calculator built with Python.
-    <br />
-    <a href="#-demo">View Demo</a>
-    ·
-    <a href="https://github.com/YOUR_USERNAME/python-calculator/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/YOUR_USERNAME/python-calculator/issues">Request Feature</a>
-  </p>
-</p>
+🎨 **User Interface**
+- Clean and modern GUI design
+- Large, easy-to-read display screen
+- Responsive button grid layout
+- Professional styling with consistent fonts and spacing
 
-## 📖 About The Project
+⚡ **User Experience**
+- Clear All (C) button to reset calculations
+- Delete (DEL) button to remove last entered character
+- Error handling for invalid operations
+- Division by zero protection
+- Continuous calculations (result becomes the starting point for next operation)
 
-This project is a Python-based calculator designed to perform arithmetic operations with error handling. It demonstrates core programming concepts such as function definition, user input handling, control flow, and exception handling.
+## Technologies/Tools Used
+- **Python 3.x**: Core programming language
+- **Tkinter**: Python's standard GUI library for creating the graphical interface
+- **ttk (Themed Tkinter)**: Modern widget styling for enhanced appearance
+- **Object-Oriented Programming**: Clean code architecture using classes
 
-It is capable of:
-* Performing Addition, Subtraction, Multiplication, and Division.
-* Handling floating-point numbers.
-* Preventing crashes when dividing by zero.
-
-
-## 🚀 Features
-
-- **User-Friendly Interface:** Clear prompts and results (CLI or GUI).
-- **Continuous Operation:** Perform multiple calculations without restarting.
-- **Safe Math:** Includes `try-except` blocks to handle invalid inputs (like letters) and mathematical errors.
-- **Clean Code:** Follows PEP 8 styling guidelines.
-
-## 🛠️ Built With
-
-* [Python](https://www.python.org/) - The core programming language.
-* [Tkinter](https://docs.python.org/3/library/tkinter.html) - (Optional) Used if you built a GUI version.
-
-## 🏁 Getting Started
-
-To get a local copy up and running, follow these simple steps.
+## Steps to Install & Run the Project
 
 ### Prerequisites
+- Python 3.x installed on your system
+- Tkinter (usually comes pre-installed with Python)
 
-* Python 3.6 or higher installed.
+### Installation Steps
 
-### Installation
+1. **Clone the repository or download the source code**
+   ```bash
+   git clone https://github.com/yourusername/calculator-app.git
+   cd calculator-app
+   ```
+   OR download the `calculator.py` file directly
 
-1.  **Clone the repo**
-    ```sh
-    git clone [https://github.com/YOUR_USERNAME/python-calculator.git](https://github.com/YOUR_USERNAME/python-calculator.git)
-    ```
-2.  **Navigate to the directory**
-    ```sh
-    cd python-calculator
-    ```
-3.  **Run the application**
-    ```sh
-    python calculator.py
-    ```
+2. **Verify Python installation**
+   ```bash
+   python --version
+   ```
+   or
+   ```bash
+   python3 --version
+   ```
 
-## 💻 Usage Examples
+3. **Run the application**
+   ```bash
+   python calculator.py
+   ```
+   or
+   ```bash
+   python3 calculator.py
+   ```
 
-Here is how the Command Line Interface (CLI) functions:
+### Alternative: Direct Execution
+Simply double-click the `calculator.py` file if Python is properly configured on your system.
 
-```text
-Select operation:
-1. Add
-2. Subtract
-3. Multiply
-4. Divide
+## Instructions for Testing
 
-Enter choice (1/2/3/4): 1
-Enter first number: 15
-Enter second number: 5
+### Basic Operation Testing
+1. **Number Input Test**
+   - Click numbers 0-9 to verify they appear in the display
+   - Test multi-digit numbers (e.g., click 1, 2, 3 to display "123")
 
-Result: 15.0 + 5.0 = 20.0
+2. **Arithmetic Operations**
+   - **Addition**: Enter "5 + 3" and press "=" → Should display "8"
+   - **Subtraction**: Enter "10 - 4" and press "=" → Should display "6"
+   - **Multiplication**: Enter "6 * 7" and press "=" → Should display "42"
+   - **Division**: Enter "15 / 3" and press "=" → Should display "5"
+
+3. **Decimal Operations**
+   - Enter "3.5 + 2.5" and press "=" → Should display "6.0"
+   - Enter "10.5 / 2" and press "=" → Should display "5.25"
+
+### Error Handling Testing
+1. **Division by Zero**
+   - Enter "5 / 0" and press "=" → Should display "Error"
+   
+2. **Invalid Expressions**
+   - Enter "5 + + 3" and press "=" → Should display "Error"
+   - Enter "* 5" and press "=" → Should display "Error"
+
+### Control Button Testing
+1. **Clear Function**
+   - Enter any expression
+   - Press "C" → Display should be empty
+   
+2. **Delete Function**
+   - Enter "1234"
+   - Press "DEL" → Should display "123"
+   - Press "DEL" again → Should display "12"
+
+### Chain Calculation Testing
+1. Enter "5 + 3" and press "=" → Displays "8"
+2. Enter "+ 2" and press "=" → Should display "10"
+3. Verify that the previous result is used as the starting value
+
+### Edge Cases
+- Test very long expressions to verify display formatting
+- Test multiple decimal points (should calculate based on valid Python syntax)
+- Test negative results (e.g., "3 - 5" = "-2")
+- Test operations with zero (e.g., "0 * 100" = "0")
+
+## Troubleshooting
+- If the application doesn't start, ensure Python is properly installed
+- If GUI appears broken, verify Tkinter installation: `python -m tkinter`
+- For font issues, the application will fall back to system defaults if Helvetica is unavailable
