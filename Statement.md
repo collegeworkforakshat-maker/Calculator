@@ -1,37 +1,26 @@
-1. Problem Statement
-Modern computing environments require quick, intuitive, and reliable tools for performing basic mathematical calculations. While desktop environments include standard calculator applications, a need exists for a lightweight, cross-platform, and easily customizable solution that can be run directly from a Python environment or packaged as a standalone application.
+# PROJECT STATEMENT
 
-The primary problem is to develop a Graphical User Interface (GUI) calculator that performs fundamental arithmetic operations reliably, using only standard Python libraries to ensure maximum portability and minimal dependency overhead.
+## Problem Statement
+In today's digital age, users often need quick access to basic mathematical calculations while working on their computers. Many existing calculator applications are either too complex with unnecessary features or lack a user-friendly graphical interface. There is a need for a simple, lightweight, and intuitive desktop calculator application that provides essential arithmetic operations without the overhead of advanced scientific functions that most users don't require for daily tasks.
 
-2. Scope of the Project
-The scope of this project is strictly defined as a Standard Desktop Calculator.
+## Scope of the Project
+This project involves developing a desktop-based calculator application using Python's Tkinter framework. The calculator will focus on providing core arithmetic operations through a clean and responsive graphical user interface. The application will be standalone, requiring no internet connection, and will run on any system with Python installed. The scope is limited to basic mathematical operations including addition, subtraction, multiplication, and division, with support for decimal numbers.
 
-In Scope:
-User Interface (UI): Creation of a responsive, modern GUI using Python's built-in tkinter library.
-Core Arithmetic: Implementation of addition (+), subtraction (-), multiplication (*), and division (/).
-Utility Functions: Implementation of Clear (C), Backspace (⌫), Percentage (%), and Equals (=) functions.
-Input Handling: Management of numerical and operator button clicks to build the mathematical expression.
-Error Handling: Basic handling for errors such as SyntaxError (invalid expressions) and ZeroDivisionError.
-Decimals: Support for floating-point (decimal) numbers.
-Out of Scope (Future Enhancements):
-Scientific functions (trigonometry, logarithms, exponentiation).
-Memory functions (M+, M-, MR, MC).
-History/logging of previous calculations.
-Theming or user-selectable skins (beyond basic ttk styling).
-Keyboard shortcut bindings (though easy to implement later).
-3. Target Users
-The calculator is designed for users who require a fast and reliable tool for everyday calculations.
+## Target Users
+- **Students**: For quick calculations during homework and study sessions
+- **Office Workers**: For basic arithmetic needs during daily work tasks
+- **Home Users**: For everyday calculations such as budgeting and simple math problems
+- **Beginners in Programming**: As a reference for understanding GUI application development
+- **Anyone seeking a distraction-free, simple calculator**: Users who prefer minimalist tools without complex scientific functions
 
-General Computer Users: Individuals who need to quickly calculate small equations without opening complex spreadsheet programs or web applications.
-Students: Users needing a simple, distraction-free tool for math homework and basic problem-solving.
-Developers/Programmers: Users who need a lightweight tool available in their terminal environment or for quick debugging calculations.
-Educational Institutions: As a foundational programming project demonstrating GUI development and expression evaluation.
-4. High-Level Features
-The calculator provides the following core capabilities:
-
-Intuitive Grid Layout: A classic calculator layout (rows of 4 buttons) ensuring ease of use and familiarity.
-Visual Feedback: Buttons are color-coded (numbers, operators, clear/equals) for improved user experience.
-Real-time Display: A read-only display area showing the current expression being built and the final result.
-Robust Calculation Engine: Uses Python's built-in eval() functionality (safely controlled by button input) for accurate computation.
-Clean Separation of Concerns: The code is structured using a class (CalculatorApp) to separate the UI creation (create_widgets) from the functional logic (on_button_click, calculate).
-Low Barrier to Entry: Requires only standard Python libraries (tkinter), ensuring zero dependency installation for end-users.
+## High-level Features
+- **Intuitive Graphical User Interface**: Clean and modern design with clearly labeled buttons and a large display area
+- **Basic Arithmetic Operations**: Support for addition (+), subtraction (-), multiplication (*), and division (/)
+- **Decimal Number Support**: Ability to work with decimal points for precise calculations
+- **Real-time Display Updates**: Immediate visual feedback as users input numbers and operations
+- **Error Handling**: Graceful handling of invalid operations and division by zero errors
+- **Clear Function**: Quick reset of all calculations with a single button press
+- **Backspace/Delete Function**: Ability to correct input mistakes by removing the last entered character
+- **Responsive Button Layout**: Grid-based design that scales appropriately within the application window
+- **Keyboard-free Operation**: Full functionality through mouse/touchpad clicks on the GUI buttons
+- **Lightweight and Fast**: Minimal resource consumption with instant response to user interactions
