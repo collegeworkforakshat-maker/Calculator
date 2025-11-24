@@ -4,19 +4,19 @@
 A simple yet elegant desktop calculator application built with Python and Tkinter. This lightweight calculator provides a clean graphical user interface for performing basic arithmetic operations. Designed with simplicity in mind, it offers all essential calculation features without unnecessary complexity, making it perfect for quick mathematical computations in daily use.
 
 ## Features
-✨ **Core Functionality**
+ **Core Functionality**
 - Basic arithmetic operations (Addition, Subtraction, Multiplication, Division)
 - Decimal number support for precise calculations
 - Real-time expression display
 - Instant calculation results
 
-🎨 **User Interface**
+ **User Interface**
 - Clean and modern GUI design
 - Large, easy-to-read display screen
 - Responsive button grid layout
 - Professional styling with consistent fonts and spacing
 
-⚡ **User Experience**
+ **User Experience**
 - Clear All (C) button to reset calculations
 - Delete (DEL) button to remove last entered character
 - Error handling for invalid operations
